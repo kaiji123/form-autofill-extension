@@ -11,7 +11,17 @@ The Form Autofill Chrome extension simplifies the process of filling out job app
 
 ### Installation
 
-1. Visit the Chrome Web Store and download the "Form Autofill" extension.
+
+
+1. Visit the Chrome Web Store and download the "Form Autofill" extension or clone this github repository and manage extensions from chrome browser.
+![Alt text](image-4.png)
+
+Then switch to Developer mode load unpacked and select the cloned folder
+
+![Alt text](image-6.png)
+
+![Alt text](image-5.png)
+
 
 ### Filling Out Forms
 
