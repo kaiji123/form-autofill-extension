@@ -94,10 +94,12 @@ function displayAutocompleteSuggestions(inputElement, suggestions) {
 // }
 function getSuggestions(inputText, callback) {
     // This is a simplified example; replace with your own suggestion logic.
-    chrome.storage.local.get(['fullName', 'email', 'phone', 'linkedin', 'github', 'address', 'city', 'postcode'], function(result) {
+    chrome.storage.local.get(['fullName', 'email', 'phone', 'linkedin', 'github', 'address', 'city', 'postcode', 'firstname','lastname'], function(result) {
       var suggestions = [];
       if (!chrome.runtime.lastError) {
         suggestions.push(result.fullName);
+        suggestions.push(result.firstname);
+        suggestions.push(result.lastname);
         suggestions.push(result.email);
         suggestions.push(result.phone);
         suggestions.push(result.linkedin);
